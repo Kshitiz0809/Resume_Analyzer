@@ -1,0 +1,29 @@
+{
+  "name": "ai-powered-resume-uploader",
+  "version": "1.0.0",
+  "description": "AI-powered resume uploader with job matching and skill gap analysis",
+  "scripts": {
+    "dev": "concurrently \"npm run dev:mcp\" \"npm run dev:backend\" \"npm run dev:frontend\"",
+    "dev:mcp": "cd mcp-server && npm run dev",
+    "dev:backend": "cd backend && npm run dev",
+    "dev:frontend": "cd frontend && npm start",
+    "install:all": "npm install && cd mcp-server && npm install && cd ../backend && npm install && cd ../frontend && npm install",
+    "build": "cd frontend && npm run build",
+    "start": "cd backend && npm start"
+  },
+  "keywords": [
+    "ai",
+    "resume",
+    "job-matching",
+    "mcp",
+    "gemini-api",
+    "react",
+    "nodejs",
+    "mongodb"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
